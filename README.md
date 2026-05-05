@@ -2,7 +2,7 @@
 
 A tiny single-file dashboard for managing [lume](https://github.com/trycua/cua/tree/main/libs/lume) VMs from your browser. Standard library only — no `pip install`, no Docker, no JS framework. ~750 lines of Python.
 
-<!-- Add a screenshot at docs/screenshot.png and reference it here once captured. -->
+![Dashboard screenshot](docs/screenshot.png)
 
 ## What it does
 
