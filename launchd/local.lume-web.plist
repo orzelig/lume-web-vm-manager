@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.orzelig.lume-web</string>
+    <string>local.lume-web</string>
 
     <key>ProgramArguments</key>
     <array>

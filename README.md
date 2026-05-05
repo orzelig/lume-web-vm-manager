@@ -60,22 +60,22 @@ Override the daemon URL with `LUME_DAEMON_URL=http://...` if you've moved `lume 
 
 ## Auto-start at login
 
-A LaunchAgent template ships in [`launchd/com.orzelig.lume-web.plist`](launchd/com.orzelig.lume-web.plist). Install it with:
+A LaunchAgent template ships in [`launchd/local.lume-web.plist`](launchd/local.lume-web.plist). Install it with:
 
 ```bash
 # From the repo root, after cloning
 sed "s|__SERVER_PY__|$PWD/server.py|g; s|__USER_HOME__|$HOME|g" \
-    launchd/com.orzelig.lume-web.plist \
-    > ~/Library/LaunchAgents/com.orzelig.lume-web.plist
-launchctl load ~/Library/LaunchAgents/com.orzelig.lume-web.plist
+    launchd/local.lume-web.plist \
+    > ~/Library/LaunchAgents/local.lume-web.plist
+launchctl load ~/Library/LaunchAgents/local.lume-web.plist
 ```
 
 Logs go to `/tmp/lume-web.log`. KeepAlive is on, so it restarts if it crashes.
 
 To remove:
 ```bash
-launchctl unload ~/Library/LaunchAgents/com.orzelig.lume-web.plist
-rm ~/Library/LaunchAgents/com.orzelig.lume-web.plist
+launchctl unload ~/Library/LaunchAgents/local.lume-web.plist
+rm ~/Library/LaunchAgents/local.lume-web.plist
 ```
 
 ## Security
@@ -118,4 +118,4 @@ Auto-refresh skips when:
 
 ## License
 
-[MIT](LICENSE) © 2026 Or Zelig
+[MIT](LICENSE) © 2026 orzelig
